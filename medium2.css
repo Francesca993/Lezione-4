@@ -28,6 +28,7 @@ body {
   align-content: center;
   position: fixed;
   top: 0;
+  z-index: 3;
   box-shadow: 20px 1px 20px 0px rgba(102, 102, 102, 0.61);
 }
 .logo {
@@ -78,10 +79,16 @@ body {
 }
 
 #blocco-due {
-  width: 40%;
+  width: 30%;
   height: 100%;
   margin: 0 10px 0 20px;
   border-left: 2px solid #e6e6e6;
+  overflow-y: auto;
+  position: fixed;
+  top: 100px;
+  right: 20px;
+  background-color: white;
+  z-index: 2;
 }
 
 #recommended {
@@ -358,7 +365,8 @@ body {
 
 #footer {
   max-width: 340px;
-  margin: 50px 0 0 20px;
+  margin: 30px 0 20px 20px;
+  height: 150px;
 }
 
 #footer a {
